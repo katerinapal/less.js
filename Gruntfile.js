@@ -267,18 +267,18 @@ module.exports = function (grunt) {
             }
         },
 
-        eslint: {
-            target: ['Gruntfile.js',
-                'test/**/*.js',
-                'lib/less*/**/*.js',
-                'bin/lessc',
-                '!test/browser/jasmine-jsreporter.js',
-                '!test/less/errors/plugin/plugin-error.js'
-            ],
-            options: {
-                configFile: '.eslintrc.json'
-            }
-        },
+        // eslint: {
+        //     target: ['Gruntfile.js',
+        //         'test/**/*.js',
+        //         'lib/less*/**/*.js',
+        //         'bin/lessc',
+        //         '!test/browser/jasmine-jsreporter.js',
+        //         '!test/less/errors/plugin/plugin-error.js'
+        //     ],
+        //     options: {
+        //         configFile: '.eslintrc.json'
+        //     }
+        // },
 
         connect: {
             server: {
@@ -535,7 +535,7 @@ module.exports = function (grunt) {
 
     var testTasks = [
         'clean',
-        'eslint',
+        // 'eslint',
         'shell:test',
         'shell:opts',
         'shell:plugin',
